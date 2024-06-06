@@ -1,0 +1,203 @@
+﻿body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; 
+}
+
+header {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px 0; 
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 10px 20px; 
+}
+
+    nav a:hover {
+        background-color: #FF5722; 
+        color: #fff; 
+        border-radius: 5px; 
+    }
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; 
+}
+
+.hero {
+    text-align: center;
+    background-size: cover;
+    color: #fff;
+    padding: 0 0;
+}
+
+h1 {
+    font-size: 48px; 
+    margin-bottom: 20px;
+    color: #FF5722; 
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #FF5722;
+    color: #fff;
+    padding: 15px 30px; 
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 30px; 
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+    .cta-button:hover {
+        background-color: #FF7043;
+    }
+
+.top-games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.game {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    cursor: pointer;
+}
+
+    .game img {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #333;
+    }
+
+    .game:hover {
+        transform: translateY(-10px); 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+.about-us, .contact {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    .about-us h2, .contact h2 {
+        color: #333;
+    }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0; 
+}
+
+.image-slider {
+    display: flex;
+    overflow: hidden;
+}
+
+    .image-slider img {
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s;
+    }
+
+    .image-slider button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+.custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+    .custom-checkbox input[type="checkbox"] {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .custom-checkbox label {
+        margin-left: 5px;
+        cursor: pointer;
+    }
+
+    .custom-checkbox .checkmark {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #ddd;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        vertical-align: middle;
+        transition: background-color 0.3s;
+    }
+
+    .custom-checkbox input[type="checkbox"]:checked + .checkmark {
+        background-color: #FF5722;
+        border: 1px solid #FF5722;
+        color: #fff;
+    }
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05); 
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.cta-button:hover, .game:hover {
+    animation: scale 0.3s ease-in-out infinite; 
+}
+
+p {
+    color: #333; 
+}
